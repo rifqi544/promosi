@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QFood | Pesan Makanan Lebih Mudah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    /* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #f9fbff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.topnav {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0195dd;
+}
+
+nav a {
+  margin-left: 30px;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0195dd;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #e8f7ff, #f9fbff);
+}
+
+.hero-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #0195dd;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: #0195dd;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #017bb4;
+}
+
+.btn.light {
+  background: #fff;
+  color: #0195dd;
+  border: 2px solid #0195dd;
+}
+
+.btn.light:hover {
+  background: #f0f8ff;
+}
+
+.btn.dark {
+  background: #0195dd;
+  color: #fff;
+}
+
+/* Fitur Section */
+.features {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #0195dd;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: #f1faff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #cceeff;
+}
+
+/* CTA */
+.cta {
+  background: #0195dd;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cta-buttons .btn {
+  margin: 10px;
+}
+
+/* Footer */
+footer {
+  background: #017ab0;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin-left: 15px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <header class="topnav">
+    <div class="container nav-content">
+      <div class="logo">🍔 QFood</div>
+      <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#unduh">Unduh</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Pesan Makanan<br><span class="highlight">Cukup dari Rumah</span></h1>
+        <p>QFood hadir untuk bantu kamu menikmati makanan favorit tanpa ribet.</p>
+        <a href="#unduh" class="btn">🚀 Mulai Sekarang</a>
+      </div>
+      <div class="hero-img">
+        <img src="https://img.freepik.com/free-vector/online-food-ordering-concept-illustration_114360-4573.jpg" alt="Food App">
+      </div>
+    </div>
+  </section>
+
+  <section id="fitur" class="features">
+    <div class="container">
+      <h2 class="section-heading">✨ Fitur QFood</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>🔎 Pencarian Cepat</h3>
+          <p>Cari restoran atau menu favoritmu hanya dengan beberapa ketikan.</p>
+        </div>
+        <div class="feature-item">
+          <h3>📦 Status Pesanan</h3>
+          <p>Lihat posisi driver secara real-time langsung dari aplikasi.</p>
+        </div>
+        <div class="feature-item">
+          <h3>💰 Metode Pembayaran Lengkap</h3>
+          <p>Dukung e-wallet, transfer, dan bayar di tempat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="unduh" class="cta">
+    <div class="container cta-content">
+      <h2>📲 Unduh QFood Sekarang</h2>
+      <p>Klik tombol dibawah untuk mengunduh</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn light">Unduh</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 QFood. Semua hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
